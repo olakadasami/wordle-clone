@@ -5,7 +5,7 @@ function App() {
   const [solution, setSolution] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:3002/solutions")
+    fetch("../data/db.json")
       .then(res => res.json())
       .then(json => {
         // get random solution from solution array
