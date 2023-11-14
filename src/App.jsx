@@ -9,7 +9,7 @@ function App() {
       .then(res => res.json())
       .then(json => {
         // get random solution from solution array
-        const randomSolution = json[Math.floor(Math.random() * json.length)]
+        const randomSolution = json.solution[Math.floor(Math.random() * json.length)]
         setSolution(randomSolution.word)
       })
   }, [setSolution])
